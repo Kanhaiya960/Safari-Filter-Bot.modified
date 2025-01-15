@@ -1,3 +1,4 @@
+not index command 
 <p align="center">
   <img src="https://envs.sh/NZi.jpg" alt="Safari-Filter-Bot Logo">
 </p>
