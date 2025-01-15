@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/07038c2e2f6211fc132c0.jpg" alt="Safari-Filter-Bot Logo">
+  <img src="https://envs.sh/NZi.jpg https://envs.sh/NZP.jpg https://envs.sh/NZb.jpg" alt="Safari-Filter-Bot Logo">
 </p>
 <h1 align="center">
   𝑺𝒂𝒇𝒂𝒓𝒊-𝑭𝒊𝒍𝒕𝒆𝒓-𝑩𝒐𝒕
