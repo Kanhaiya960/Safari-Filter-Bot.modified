@@ -1,5 +1,3 @@
-# This code has been modified by @Safaridev
-# Please do not remove this credit
 from pyrogram import Client, filters
 import datetime
 import time
