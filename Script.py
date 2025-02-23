@@ -165,7 +165,7 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
 
-    LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """#New_Group
 
 ● BOT {}
 
@@ -174,8 +174,8 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 ● Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 
 ● Aᴅᴅᴇᴅ Bʏ - {}"""
-
-    LOG_TEXT_P = """#NewUser
+    
+    NEW_USER_TXT = """#New_User
 
 ■ ID - <code>{}</code>
 
