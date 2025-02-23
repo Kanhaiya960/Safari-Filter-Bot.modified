@@ -96,11 +96,11 @@ MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 
-KANUS_LNK = environ.get('KANUS_LNK', 'https://t.me/+AvKvMYnh8ONhNTM1') #Kᴀɴᴜs Nᴇᴛᴡᴏʀᴋ™
+KANUS_LNK = environ.get('KANUS_LNK', 'https://t.me/Kanus_Network') #Kᴀɴᴜs Nᴇᴛᴡᴏʀᴋ™
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+AvKvMYnh8ONhNTM1') #Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ
-MOVIES_LNK = environ.get('MOVIES_LNK', 'https://t.me/MovieSearchGroupHD') #Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ
+MOVIES_LNK = environ.get('MOVIES_LNK', 'https://t.me/Movies_4_Download') #Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieSearchGroupHD') #Mᴏᴠɪᴇs Gʀᴏᴜᴘ
-HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/+AvKvMYnh8ONhNTM1') #Hᴀᴄᴋɪɴɢ Cʜᴀɴɴᴇʟ
+HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/UpperZone') #Hᴀᴄᴋɪɴɢ Cʜᴀɴɴᴇʟ
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002380335187))
