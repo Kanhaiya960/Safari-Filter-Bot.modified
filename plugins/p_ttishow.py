@@ -47,21 +47,15 @@ async def save_group(bot, message):
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             for u in message.new_chat_members:
-                                if (temp.MELCOW).get('welcome') is not None:
+                if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url=OWNER_LNK)
-                ]]                               
                 temp.MELCOW['welcome'] = await message.reply_video(
-                    video=WELCOME_VID,
-                    caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
-                    parse_mode=enums.ParseMode.HTML
+                                                 video=WELCOME_VID,
+                                                 caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 parse_mode=enums.ParseMode.HTML
                 )
         await message.delete()
         if settings["auto_delete"]:
