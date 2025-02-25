@@ -103,7 +103,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieSearchGroupHD') #Mᴏᴠɪ�
 HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/UpperZone') #Hᴀᴄᴋɪɴɢ Cʜᴀɴɴᴇʟ
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002380335187))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002237007652))
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002419514463))
 GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002419514463)) # Group verify stats 
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002438606624)) # movies request channel, else log channel
