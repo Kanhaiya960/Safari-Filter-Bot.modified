@@ -33,16 +33,19 @@ WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2d
 REFFER_PIC = environ.get('REFFER_PIC', 'https://graph.org/file/f75feb19aece0d4badefd.jpg')
 PREMIUM_PIC = environ.get('SUBSCRIPTION', 'https://i.imghippo.com/files/wPdPK1726559453.jpg')
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/ghl.jpg') # Scanner Code image 
+
 #refer time, or feffer count
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "100")) # Set Referel point Count 
+
 #premium Users Satuts
 premium = environ.get('PREMIUM_LOGS', '-1002450886765')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
+
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 5))
 SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 2))
-LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
+LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), True)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6552970915').split()]
@@ -89,7 +92,7 @@ TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/Movies_4_Download')
 TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/Movies_4_Download')
 
 # auto files delete
-AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), False)
+AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), True)
 
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002412021360').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
@@ -106,7 +109,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ A�
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002321570567))
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002419514463))
 GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002419514463)) # Group verify stats 
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002438606624)) # movies request channel, else log channel
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002321570567)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Blockbuster_Movies_Club')
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -122,9 +125,6 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 
 REACTION = ["🔥", "😍", "🥰", "🎉"]
-
-from os import environ, getenv
-ON_HEROKU = "DYNO" in os.environ  # Automatically detects Heroku
 
 # Streaming
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1002412021360")) 
