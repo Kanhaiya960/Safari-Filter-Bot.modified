@@ -126,6 +126,9 @@ MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 
 REACTION = ["🔥", "😍", "🥰", "🎉"]
 
+from os import environ, getenv
+ON_HEROKU = "DYNO" in os.environ  # Automatically detects Heroku
+
 # Streaming
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1002412021360")) 
 PORT = int(environ.get('PORT', 8080))
