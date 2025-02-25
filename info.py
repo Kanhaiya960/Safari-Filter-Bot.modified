@@ -37,7 +37,7 @@ QR_CODE = environ.get('QR_CODE', 'https://envs.sh/ghl.jpg') # Scanner Code image
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "100")) # Set Referel point Count 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1002380335187')
+premium = environ.get('PREMIUM_LOGS', '-1002450886765')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 5))
@@ -50,7 +50,7 @@ OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "rj_09_kanhaiya") # widout 👉
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002462264302').split()]
 
 # post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986').split(','))))
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986 -1002341735077 -1002341735077').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002393733817'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002341735077'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
@@ -104,8 +104,9 @@ HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/UpperZone') #Hᴀᴄᴋɪ
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002380335187))
-GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002380335187)) # Group verify stats 
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002412021360)) # movies request channel, else log channel
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002419514463))
+GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002419514463)) # Group verify stats 
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002438606624)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Blockbuster_Movies_Club')
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -118,10 +119,9 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 
-REACTION = ["🔥", "😍", "⚡", "🥰", "🎉", "❤‍🔥", "⚡", "😇", "🤗", "😘", "😎"]
+REACTION = ["🔥", "😍", "🥰", "🎉"]
 
 from os import environ, getenv
 ON_HEROKU = "DYNO" in os.environ  # Automatically detects Heroku
