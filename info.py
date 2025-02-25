@@ -50,7 +50,7 @@ OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "rj_09_kanhaiya") # widout 👉
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002462264302').split()]
 
 # post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986 -1002341735077 -1002341735077').split(','))))
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986,-1002341735077').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002393733817'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002341735077'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
