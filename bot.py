@@ -88,9 +88,8 @@ async def start():
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
-    await client.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.U_NAME, temp.B_NAME, today, time))
-
-
+    await SafariBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.U_NAME, temp.B_NAME, today, time))
+    
 if __name__ == '__main__':
     try:
         loop.run_until_complete(start())
