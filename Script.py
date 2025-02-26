@@ -175,7 +175,7 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 
 ● Aᴅᴅᴇᴅ Bʏ - {}"""
     
-    NEW_USER_TXT = """<b>#New_User
+    LOG_TEXT_P = """<b>#New_User
 
 ≈ ɪᴅ:- <code>{}</code>
 ≈ ɴᴀᴍᴇ:- {}</b>"""
