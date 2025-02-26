@@ -61,8 +61,6 @@ async def save_group(bot, message):
         if settings["auto_delete"]:
             await asyncio.sleep(600)
             await (temp.MELCOW['welcome']).delete()
-                
-               
 
 
 
@@ -126,7 +124,6 @@ async def disable_chat(bot, message):
         await bot.leave_chat(chat_)
     except Exception as e:
         await message.reply(f"Error - {e}")
-
 
 @Client.on_message(filters.command('enable') & filters.user(ADMINS))
 async def re_enable_chat(bot, message):
