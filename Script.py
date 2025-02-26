@@ -165,20 +165,16 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
 
-    LOG_TEXT_G = """#New_Group
+    LOG_TEXT_G = """#NewGroup
+BOT {}
+Gʀᴏᴜᴘ = {}(<code>{}</code>)
+Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
+Aᴅᴅᴇᴅ Bʏ - {}"""
 
-Group name - {}
-Id - <code>{}</code>
-Group username - @{}
-Group link - {}
-Total members - <code>{}</code>
-User - {}"""
-    
-    LOG_TEXT_P = """<b>#New_User
-
-≈ ɪᴅ:- <code>{}</code>
-≈ ɴᴀᴍᴇ:- {}</b>"""
-
+    LOG_TEXT_P = """#NewUser
+ID - <code>{}</code>
+Nᴀᴍᴇ - {}
+Bᴏᴛ {}"""
     
     ALRT_TXT = """{},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
