@@ -167,13 +167,12 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 
     LOG_TEXT_G = """#New_Group
 
-● BOT {}
-
-● Gʀᴏᴜᴘ = {}(<code>{}</code>)
-
-● Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-
-● Aᴅᴅᴇᴅ Bʏ - {}"""
+Group name - {}
+Id - <code>{}</code>
+Group username - @{}
+Group link - {}
+Total members - <code>{}</code>
+User - {}"""
     
     LOG_TEXT_P = """<b>#New_User
 
