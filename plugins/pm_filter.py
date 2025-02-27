@@ -1321,11 +1321,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "start":
         buttons = [[
-                        InlineKeyboardButton('✪ ᴜᴘᴅᴀᴛᴇꜱ ✪', callback_data='channels')
-                    ],[
-                        InlineKeyboardButton('⚔️ғᴇᴀᴛᴜʀᴇs ⚔️', callback_data='features'),
-                        InlineKeyboardButton('🍀 Hᴇʟᴘ 🍀', callback_data='help')
-                    ]]
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ],[
+            InlineKeyboardButton('⚔️ғᴇᴀᴛᴜʀᴇs ⚔️', callback_data='features'),
+            InlineKeyboardButton('🍀 Hᴇʟᴘ 🍀', callback_data='help')
+        ],[
+            InlineKeyboardButton('✪ ᴜᴘᴅᴀᴛᴇꜱ ✪', callback_data='channels')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
