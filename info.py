@@ -91,25 +91,25 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Movies_4_Download')
 TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/Movies_4_Download')
 TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/Movies_4_Download')
 
-# auto files delete
-AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), True)
-
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002412021360').split()]
-MAX_B_TN = environ.get("MAX_B_TN", "7")
-MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
-
+#Channel
 KANUS_LNK = environ.get('KANUS_LNK', 'https://t.me/Kanus_Network') #Kᴀɴᴜs Nᴇᴛᴡᴏʀᴋ™
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+AvKvMYnh8ONhNTM1') #Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ
 MOVIES_LNK = environ.get('MOVIES_LNK', 'https://t.me/Movies_4_Download') #Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieSearchGroupHD') #Mᴏᴠɪᴇs Gʀᴏᴜᴘ
 HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/UpperZone') #Hᴀᴄᴋɪɴɢ Cʜᴀɴɴᴇʟ
+#Logs
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002321570567))
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002450886765))
+GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002450886765)) # Group verify stats 
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002321570567)) # movies request channel, else log channel
+# auto files delete
+AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), True)
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002412021360').split()]
+MAX_B_TN = environ.get("MAX_B_TN", "7")
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
+PORT = environ.get("PORT", "8080")
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002321570567))
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002419514463))
-GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002419514463)) # Group verify stats 
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002321570567)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Blockbuster_Movies_Club')
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
