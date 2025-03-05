@@ -44,10 +44,11 @@ async def upload_to_imgbb(client, message: Message):
                 await msg.edit_text(
                     f"<b>✅ Successfully Uploaded!</b>\n\n🔗 Link: <code>{image_url}</code>",
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("🌐 Open Link", url=image_url)],
-                        [InlineKeyboardButton("🔗 Share Link", url=f"https://telegram.me/share/url?url={image_url}")],
-                        [InlineKeyboardButton("✖ Close", callback_data="close")]
+                    reply_markup=InlineKeyboardMarkup( [[
+                        InlineKeyboardButton(text="🌐 Open Link", url=image_url),
+                        InlineKeyboardButton(text="🔗 Share Link", url=f"https://telegram.me/share/url?url={image_url}")
+                    ],[
+                        InlineKeyboardButton(text="✗ Close ✗", callback_data="close")]
                     ])
                 )
             else:
