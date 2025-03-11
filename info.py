@@ -67,10 +67,10 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "PikaBot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'modijiurl.com'))
-STREAM_API = (environ.get('STREAM_API', '3eca63413e5163d3467378b3f189a3dddad33307'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'techvjlink.site'))
+STREAM_API = (environ.get('STREAM_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
 STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Movies_4_Download'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
 
 
 #verify site api and url
