@@ -62,7 +62,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 #DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://teamzed:zedteamm@cluster0.tjohb2b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 #COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://PikaFiles:Kanhaiya@cluster0.olrtq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "PikaBot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 
