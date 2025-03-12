@@ -72,24 +72,24 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
 STREAM_SITE = (environ.get('STREAM_SITE', 'techvjlink.site'))
 STREAM_API = (environ.get('STREAM_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
-STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Movies_4_Download'))
+STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Movies_4_Download/0'))
 
 #verify site api and url
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 VERIFY_URL = environ.get('VERIFY_URL', 'techvjlink.site')
 VERIFY_API = (environ.get('VERIFY_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Movies_4_Download')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Movies_4_Download/1')
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "10000"))
 VERIFY_URL2 = environ.get('VERIFY_URL2', 'techvjlink.site')
 VERIFY_API2 = (environ.get('VERIFY_API2', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
-TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/Movies_4_Download')
+TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/Movies_4_Download/2')
 
 THIRD_VERIFY_GAP = int(environ.get('THIRD_VERIFY_GAP', "10000"))
 VERIFY_URL3 = environ.get('VERIFY_URL3', 'techvjlink.site')
 VERIFY_API3 = (environ.get('VERIFY_API3', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
-TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/Movies_4_Download') 
+TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/Movies_4_Download/3') 
 
 #-----------------------------------------#
 #-----------------------------------------#
