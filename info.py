@@ -40,8 +40,8 @@ REFFER_POINT = int(environ.get('USER_POINT', "100")) # Set Referel point Count
 
 
 # Total File Limit & Send All File's Button Limit 
-LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), True)
-FILE_LIMITE = int(environ.get('FILE_LIMITE', 3))
+LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'False')), False)
+FILE_LIMITE = int(environ.get('FILE_LIMITE', 10))
 SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 1))
 
 # Admins,  Database Channels, Force Subscription & Auto Post Channel
