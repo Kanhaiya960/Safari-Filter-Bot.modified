@@ -29,34 +29,28 @@ USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), Tru
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0ed351c8605c23e8cae79.jpg https://telegra.ph/file/6524270c008b60f81f30a.jpg https://telegra.ph/file/848ed57090fd5111ce64d.jpg https://telegra.ph/file/5fe959d96fcc33d1b9dc9.jpg https://telegra.ph/file/ec5f5a031b7826e28360c.jpg https://telegra.ph/file/aa4b77441bb41cfce12d7.jpg https://telegra.ph/file/00ed60e2c89d564d850ef.jpg https://telegra.ph/file/a5d518f6020976bc45264.jpg https://telegra.ph/file/650191ad1f813ca8f41cb.jpg https://telegra.ph/file/c6042704a1bc0a2b52996.jpg https://telegra.ph/file/9d68211fa9dcb208200be.jpg')).split()
 WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 
-#premium imag
+# Premium Images
 REFFER_PIC = environ.get('REFFER_PIC', 'https://graph.org/file/f75feb19aece0d4badefd.jpg')
 PREMIUM_PIC = environ.get('SUBSCRIPTION', 'https://i.imghippo.com/files/wPdPK1726559453.jpg')
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/ghl.jpg') # Scanner Code image 
 
-#refer time, or feffer count
+# Refer Time & Reffer Count
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "100")) # Set Referel point Count 
 
-#premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1002450886765')
-PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 
-# lock file, set file limit 
+# Total File Limit & Send All File's Button Limit 
+LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), True)
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 3))
 SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 1))
-LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), True)
 
-# Admins, Channels & Users
+# Admins,  Database Channels, Force Subscription & Auto Post Channel
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "rj_09_kanhaiya") # without 👉 @
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6552970915').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "rj_09_kanhaiya") # widout 👉 @
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002462264302').split()]
-
-# post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986,-1002341735077').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002393733817'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002341735077'))
-NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002090374492,-1002393733817,-1002146486688,-1002481856986,-1002341735077').split(','))))
 
 # MongoDB information
 #DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://teamzed:zedteamm@cluster0.tjohb2b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -69,13 +63,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 #-----------------------------------------#
 #-----------------------------------------#
 
-#stream link shortner
+# Stream Link Shortner
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
 STREAM_SITE = (environ.get('STREAM_SITE', 'techvjlink.site'))
 STREAM_API = (environ.get('STREAM_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
 STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Movies_4_Download/0'))
 
-#verify site api and url
+# Verify Site Api And Url
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 VERIFY_URL = environ.get('VERIFY_URL', 'techvjlink.site')
@@ -95,26 +89,29 @@ TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/Movies_4_Download/3')
 #-----------------------------------------#
 #-----------------------------------------#
 
-#Channel
+# Channel
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Blockbuster_Movies_Club') #SUPPORT CHAT
 KANUS_LNK = environ.get('KANUS_LNK', 'https://t.me/Kanus_Network') #Kᴀɴᴜs Nᴇᴛᴡᴏʀᴋ™
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+AvKvMYnh8ONhNTM1') #Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ
 MOVIES_LNK = environ.get('MOVIES_LNK', 'https://t.me/Movies_4_Download') #Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieSearchGroupHD') #Mᴏᴠɪᴇs Gʀᴏᴜᴘ
 HACKING_LNK = environ.get('HACKING_LNK', 'https://t.me/UpperZone') #Hᴀᴄᴋɪɴɢ Cʜᴀɴɴᴇʟ
-#Logs
+
+#Logs And Other
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002321570567))
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', -1002450886765))
 GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002450886765)) # Group verify stats 
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002321570567)) # movies request channel, else log channel
-# auto files delete
-AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), True)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002412021360').split()]
+
+# auto files delete
+NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
+AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), True)
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Blockbuster_Movies_Club')
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
