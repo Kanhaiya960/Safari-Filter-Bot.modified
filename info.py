@@ -68,6 +68,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 
 #-----------------------------------------#
 #-----------------------------------------#
+
 #stream link shortner
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
 STREAM_SITE = (environ.get('STREAM_SITE', 'techvjlink.site'))
