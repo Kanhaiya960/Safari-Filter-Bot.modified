@@ -1,17 +1,9 @@
+<img src="https://i.ibb.co/8DKK6TVw/photo-2025-03-18-10-00-20-7483087293226418196.jpg" alt="Stark-Filter-Bot Logo">
+<img src="https://i.ibb.co/1Y2P9dHy/photo-2025-03-18-10-00-20-7483087323291189264.jpg" alt="Stark-Filter-Bot Logo">
+<img src="https://i.ibb.co/b5N2mYd6/photo-2025-03-18-10-00-21-7483087340471058448.jpg" alt="Stark-Filter-Bot Logo">
+<img src="https://i.ibb.co/QFz9w5Qg/photo-2025-03-18-10-00-21-7483087361945894932.jpg" alt="Stark-Filter-Bot Logo">
+
 Public repository · Forked from shai1995/Safari-Filter-Bots
-
-not index command 
-<p align="center">
-  <img src="https://envs.sh/NZi.jpg" alt="Safari-Filter-Bot Logo">
-</p>
-
-<p align="center">
-  <img src="https://envs.sh/NZb.jpg" alt="Safari-Filter-Bot Logo">
-</p>
-
-<p align="center">
-  <img src="https://envs.sh/NZP.jpg" alt="Safari-Filter-Bot Logo">
-</p>
 
 <h1 align="center">
   𝑺𝒂𝒇𝒂𝒓𝒊-𝑭𝒊𝒍𝒕𝒆𝒓-𝑩𝒐𝒕
