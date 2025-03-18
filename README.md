@@ -4,6 +4,7 @@
 <img src="https://i.ibb.co/QFz9w5Qg/photo-2025-03-18-10-00-21-7483087361945894932.jpg" alt="Stark-Filter-Bot Logo">
 
 Public repository · Forked from shai1995/Safari-Filter-Bots
+$ shortlink problem (not changing)
 
 <h1 align="center">
   𝑺𝒂𝒇𝒂𝒓𝒊-𝑭𝒊𝒍𝒕𝒆𝒓-𝑩𝒐𝒕
