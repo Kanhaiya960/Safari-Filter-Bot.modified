@@ -3,7 +3,7 @@
 <img src="https://i.ibb.co/b5N2mYd6/photo-2025-03-18-10-00-21-7483087340471058448.jpg" alt="Stark-Filter-Bot Logo">
 <img src="https://i.ibb.co/QFz9w5Qg/photo-2025-03-18-10-00-21-7483087361945894932.jpg" alt="Stark-Filter-Bot Logo">
 
-Public repository · Forked from shai1995/Safari-Filter-Bots
+$ Forked of shai1995/Safari-Filter-Bots
 $ shortlink problem (not changing)
 
 <h1 align="center">
