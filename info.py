@@ -64,13 +64,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PikaBot')
 #-----------------------------------------#
 
 # Stream Link Shortner
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 STREAM_SITE = (environ.get('STREAM_SITE', 'techvjlink.site'))
 STREAM_API = (environ.get('STREAM_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
 STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Movies_4_Download/0'))
 
 # Verify Site Api And Url
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 VERIFY_URL = environ.get('VERIFY_URL', 'techvjlink.site')
 VERIFY_API = (environ.get('VERIFY_API', '5d84c45bd97704c052ca8355670f0d024083f3fb'))
